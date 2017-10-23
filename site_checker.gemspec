@@ -28,6 +28,9 @@ Gem::Specification.new do |spec|
   end
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.bindir        = "bin"
+  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables << "site"
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.15"

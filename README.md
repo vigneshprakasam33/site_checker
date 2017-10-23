@@ -23,13 +23,13 @@ Or install it yourself as:
 Using the executable
 
 ```
-bundle exec bin/site status [WEBSITE]
+bundle exec site status [WEBSITE]
 ```
 
 Sample input
 
 ```
-bundle exec bin/site status https://autoattend.com
+bundle exec site status https://autoattend.com
 ```
 
 Sample output

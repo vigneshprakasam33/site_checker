@@ -22,7 +22,13 @@ Or install it yourself as:
 
 Using the executable
 
-```ruby
+```
+bundle exec bin/site status [WEBSITE]
+```
+
+Sample input
+
+```
 bundle exec bin/site status https://autoattend.com
 ```
 

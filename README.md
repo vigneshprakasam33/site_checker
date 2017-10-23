@@ -1,15 +1,13 @@
 # SiteChecker
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/site_checker`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is just a simple gem to check HTTP status of a webpage and response time of the site.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'site_checker'
+gem 'site-checker'
 ```
 
 And then execute:
@@ -18,21 +16,28 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install site_checker
+    $ gem install site-checker
 
 ## Usage
 
-TODO: Write usage instructions here
+Using the executable
 
-## Development
+```ruby
+bundle exec bin/site status https://autoattend.com
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Sample output
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+Website - https://autoattend.com
+Status - 200 OK
+Response time - 2.388711 seconds
+```
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/site_checker. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/vigneshprakasam33/site_checker. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +45,4 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## Code of Conduct
 
-Everyone interacting in the SiteChecker project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/site_checker/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the SiteChecker project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/vigneshprakasam33/site_checker/blob/master/CODE_OF_CONDUCT.md).

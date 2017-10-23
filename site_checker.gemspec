@@ -4,20 +4,20 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "site_checker/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "site_checker"
+  spec.name          = "site-checker"
   spec.version       = SiteChecker::VERSION
   spec.authors       = ["Vignesh Prakasam"]
-  spec.email         = ["vigneshp.ceg+github@gmail.com"]
+  spec.email         = ["admin@autoattend.com"]
 
   spec.summary       = "Check site status"
   spec.description   = "Check site status and response time"
-  spec.homepage      = 'http://rubygems.org/gems/site_checker'
+  spec.homepage      = "https://github.com/vigneshprakasam33/site_checker"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata["allowed_push_host"] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."

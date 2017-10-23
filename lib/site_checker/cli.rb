@@ -5,7 +5,7 @@ module SiteChecker
   class CLI < Thor
 
     desc "website status" , "Check http status and response time"
-    def status(site)
+    def status(site="http://www.google.com")
          puts SiteChecker.status(site)
     end
     

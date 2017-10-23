@@ -4,10 +4,13 @@ require "net/https"
 require "uri"
 
 module SiteChecker
-  def self.status(site="http://www.google.com")
+  def self.status(site)
 		uri = URI.parse(site)
 		http = Net::HTTP.new(uri.host, uri.port)
-		http.use_ssl = true
+		proto = site.split(':')
+		if proto[0] == "https"
+			http.use_ssl = true
+		end
  		start_time = Time.now
     	request = Net::HTTP::Get.new(uri.request_uri) 
     	res = http.request(request)

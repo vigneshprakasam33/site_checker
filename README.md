@@ -20,6 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
+In IRB console,
+ ```
+2.3.1 :001 > require 'site_checker'
+ => true 
+2.3.1 :002 > SiteChecker.status('https://autoattend.com')
+ => 200 
+
+ ```
+ 
+ 
+
+
 Using the executable
 
 ```
